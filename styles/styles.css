@@ -1,3 +1,74 @@
+/*
+font: font-family: "Roboto", serif;
+*/
 body {
     background-color: #E5E5E5;
 }
+h1 {
+    font-family: "Roboto", serif;       /*sorry, can't find free version of Helvetica Neue*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: auto;
+    letter-spacing: 0%;
+    margin-left: 24px;
+}
+h2 {
+    font-family: "Roboto", serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: auto;
+    letter-spacing: 0%;
+}
+.container-grid {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 24px;
+}
+.div-a {
+    background-color: #007F5F;
+}
+.div-b {
+    background-color: #2B9348;
+}
+.div-c {
+    background-color: #80B918;
+}
+.div-d {
+    background-color: #DDDF00;
+}
+.div-e {
+    background-color: #EEEF20;
+}
+.div-f {
+    background-color: #FFFF3F;
+}
+.div-g {
+    background-color: #55A630;
+}
+.div-h {
+    background-color: #AACC00;
+}
+.div-i {
+    background-color: #BFD200;
+}
+.div-j {
+    background-color: #D4D700;
+}
+.div-k {
+    background-color: #007F5F;
+}
+.container-h1 {
+    background-color: #9BC1BC;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 146px;
+    display: flex;
+    align-content: center;
+}
+
+
+ 
