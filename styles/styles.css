@@ -1,8 +1,17 @@
-/*
-font: font-family: "Roboto", serif;
-*/
 body {
     background-color: #E5E5E5;
+}
+.color-palette {
+    max-width: 1440px;
+    width: 100%;
+    max-height: 900px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 h1 {
     font-family: "Roboto", serif;       /*sorry, can't find free version of Helvetica Neue*/
@@ -11,64 +20,73 @@ h1 {
     font-size: 64px;
     line-height: auto;
     letter-spacing: 0%;
-    margin-left: 24px;
-}
-h2 {
-    font-family: "Roboto", serif;
-    color: #000000;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: auto;
-    letter-spacing: 0%;
 }
 .container-grid {
     background-color: #FFFFFF;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 754px;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: 24px repeat(6, 1fr) 24px;
+    grid-template-rows: 24px repeat(10, 1fr) 24px;
     grid-gap: 24px;
 }
 .div-a {
     background-color: #007F5F;
+    grid-area: 2 / 2 / span 3 / span 2;
 }
 .div-b {
     background-color: #2B9348;
+    grid-area: 5 / 2 / span 3 / span 2;
 }
 .div-c {
     background-color: #80B918;
+    grid-area: 2 / 4 / span 6 / span 2;
 }
 .div-d {
     background-color: #DDDF00;
+    grid-area: 2 / 6 / span 2 / span 2;
 }
 .div-e {
     background-color: #EEEF20;
+    grid-area: 4 / 6 / span 2 / span 2;
 }
 .div-f {
     background-color: #FFFF3F;
+    grid-area: 6 / 6 / span 2 / span 2;
 }
 .div-g {
     background-color: #55A630;
+    grid-area: 8 / 2 / span 4 / span 2;
 }
 .div-h {
     background-color: #AACC00;
+    grid-area: 8 / 4 / 10 / 5;
 }
 .div-i {
     background-color: #BFD200;
+    grid-area: 10 / 4 / 12 / 5;
 }
 .div-j {
     background-color: #D4D700;
+    grid-area: 8 / 5 / span 4 / span 2;
 }
 .div-k {
     background-color: #007F5F;
+    grid-area: 8 / 7 / span 4 / 8;
 }
 .container-h1 {
     background-color: #9BC1BC;
     max-width: 1440px;
     width: 100%;
-    min-height: 146px;
-    display: flex;
-    align-content: center;
+    max-height: 146px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-template-rows: 1fr;
 }
-
-
- 
+.div-h1 {
+    grid-area: 1 / 2 / 2 / 3;
+    order: 1;
+}
