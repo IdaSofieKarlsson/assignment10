@@ -83,10 +83,11 @@ h1 {
     max-height: 146px;
     height: 100%;
     display: grid;
-    grid-template-columns: 24px 1fr;
+    grid-template-columns: 24px repeat(6, 1fr) 24px;
     grid-template-rows: 1fr;
+    grid-gap: 24px;
 }
 .div-h1 {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 2 / 2 / 8;
     order: 1;
 }
